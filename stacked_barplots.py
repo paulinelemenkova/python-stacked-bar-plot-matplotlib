@@ -1,12 +1,22 @@
 #!/usr/bin/env python
 # coding: utf-8
+"""Stacked Bar Plots with Python and Matplotlib
+
+Author:  Polina Lemenkova
+ORCID:   https://orcid.org/0000-0002-5759-1089
+Archive: https://doi.org/10.13140/RG.2.2.26529.66406
+License: MIT
+
+See README.md for details.
+"""
 import os
+
+import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
-import matplotlib.pyplot as plt
 from matplotlib import rc
 
-os.chdir('/Users/pauline/Documents/Python')
+os.chdir(os.path.dirname(os.path.abspath(__file__)))
 df = pd.read_csv("Tab-Morph.csv")
 
 bars1 = df.plate_phill
